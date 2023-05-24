@@ -1,0 +1,22 @@
+{
+  "name": "gingerbread-man",
+  "displayName": "Chocolate Chip",
+  "description": "Is it a cold and rainy day? To prepare hot chocolate and programing something fun :),in an house of chocolate with color chips.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "publisher": "Codev",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Chocolate House",
+        "uiTheme": "vs-dark",
+        "path": "./themes/XxXx-color-theme.json"
+      }
+    ]
+  }
+}
