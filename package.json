@@ -1,12 +1,16 @@
 {
   "name": "gingerbread-man",
   "displayName": "Chocolate Chip",
-  "description": "Is it a cold and rainy day? To prepare hot chocolate and programing something fun :),in an house of chocolate with color chips.",
-  "version": "0.0.1",
+  "description": "Is it a cold and rainy day? To prepare hot chocolate and programing something fun,in an house of chocolate with color chips.",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-print-helloworld/Xx.git"},
   "engines": {
     "vscode": "^1.77.0"
   },
   "publisher": "Codev",
+  "icon": "i.png",
   "categories": [
     "Themes"
   ],
