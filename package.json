@@ -1,8 +1,8 @@
 {
   "name": "gingerbread-man",
   "displayName": "Chocolate Chip",
-  "description": "Is it a cold and rainy day? To prepare hot chocolate and programing something funX,in an house of chocolate with color chips.",
-  "version": "0.0.3",
+  "description": "it's a theme based on the gingerbread man's house colors, especially for python",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/code-print-helloworld/Xx.git"},
