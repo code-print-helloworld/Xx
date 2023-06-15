@@ -1,36 +1,36 @@
 Python
 
-![Cookie](ChocoPYTHON.PNG)
+![Cookie1](ChocoPYTHON.PNG)
 
 
 
 Java
 
-![Cookie](ChocoJAVA.PNG)
+![Cookie2](ChocoJAVA.PNG)
 
 
 
 JavaScript
 
-![Cookie](ChocoJAVASCRIPT.PNG)
+![Cookie3](ChocoJAVASCRIPT.PNG)
 
 
 
 C
 
-![Cookie](ChocoC.PNG)
+![Cookie4](ChocoC.PNG)
 
 
 
 C++
 
-![Cookie](ChocoC++.PNG)
+![Cookie5](ChocoC++.PNG)
 
 
 
 C++
 
-![Cookie](ChocoC+++.PNG)
+![Cookie6](ChocoC+++.PNG)
 
 
 
