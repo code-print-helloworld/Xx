@@ -1,8 +1,8 @@
 {
   "name": "gingerbread-man",
   "displayName": "Chocolate Chip",
-  "description": "it's a theme based on the gingerbread man's house colors, especially for python",
-  "version": "0.0.4",
+  "description": "it's a theme based on the gingerbread man's house colors",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/code-print-helloworld/Xx.git"},

@@ -20,7 +20,7 @@
 		"editor.selectionBackground": "#006b596d",
 		"editor.selectionHighlightBackground": "#00ffff38",
 		"editorBracketMatch.border": "#ffffff",
-		"editorCursor.foreground": "#ffff00",
+		"editorCursor.foreground": "#59ff00",
 		"editorCodeLens.foreground": "#94b6a1",
 		"editorError.border": "#2d323b",
 		"editorError.foreground": "#dd518c",
@@ -34,7 +34,7 @@
 		"editorGutter.modifiedBackground": "#901872",
 		"editorHoverWidget.background": "#112823",
 		"editorHoverWidget.border": "#112823",
-		"editor.lineHighlightBorder": "#474c46",
+		"editor.lineHighlightBackground": "#391426",
 		"editorLineNumber.foreground": "#506070",
 		"editorLineNumber.activeForeground": "#c86100",
 		"editorLink.activeForeground": "#01e796",
@@ -135,10 +135,39 @@
 	//______________________________________
 	"tokenColors": [
 		{
+			"name": "italic",
+			"scope": [
+				"entity.other.inherited-class",
+				"variable.language",
+				"variable.language.this",
+				"variable.language.super",
+				"meta.var.expr",
+				"constant.language",
+			],
+			"settings": {
+				"fontStyle": "italic",
+			}
+		},
+		{
+			"name": "bold",
+			"scope": [
+				"support.function.",
+			],
+			"settings": {
+				"fontStyle": "bold",
+			}
+		},
+		{
 			"name": "turquesa",
 			"scope": [
 				"entity.other.attribute-name.id.css",
 				"storage.type.modifier.access",
+				"keyword.control.new.java",
+				"entity.name.type.class.java",
+				"entity.name.function.js",
+				"entity.name.type.class.js",
+				"entity.name.function.python",
+				"entity.name.type.class.python"
 			],
 			"settings": {
 				"foreground": "#18c09e",
@@ -149,6 +178,17 @@
 			"scope": [
 				"support.type.property-name.css",
 				"variable.other.property.js",
+				"entity.name.function.call.initializer.cpp",
+				"variable.other.property.cpp",
+				"meta.block.cpp",
+				"variable.object.c",
+				"variable.other.member.c",
+				"meta.block.c",
+				"meta.function-call.c",
+				"variable.other.object.property.java",
+				"variable.other.definition.java",
+				"meta.function-call.generic.python",
+				"meta.attribute.python",
 			],
 			"settings": {
 				"foreground": "#FF9562",
@@ -162,6 +202,12 @@
 				"variable.language",
 				"storage.type.primitive",
 				"storage.type.built-in.primitive",
+				"storage.type.built-in.primitive.cpp",
+				"storage.type.java",
+				"storage.type.object.array.java",
+				"support.function.builtin.python",
+				"variable.other.readwrite"
+
 			],
 			"settings": {
 				"foreground": "#FF5370",
@@ -169,14 +215,20 @@
 		},
 		{
 			"name": "rosa oscuro",
-			"scope": [],
+			"scope": [
+				"storage.type.class.python",
+				"storage.type.function.python",
+				"storage.type.struct.c"
+			],
 			"settings": {
-				"foreground": "#ff167b",
+				"foreground": "#9e0c4c",
 			}
 		},
 		{
 			"name": "gris claro",
-			"scope": [],
+			"scope": [
+				"meta.parens.cpp"
+			],
 			"settings": {
 				"foreground": "#CBC5BE",
 			}
@@ -195,6 +247,15 @@
 			"name": "azul claro",
 			"scope": [
 				"keyword.control.at-rule",
+				"keyword.other",
+				"variable.other.object.js",
+				"entity.name.function.c",
+				"meta.body.function.definition.cpp",
+				"meta.body.class.cpp",
+				"variable.other.object.java",
+				"support.function.builtin.python",
+				"variable.other.readwrite.js"
+
 			],
 			"settings": {
 				"foreground": "#18a1c0",
@@ -212,7 +273,8 @@
 		{
 			"name": "verde claro",
 			"scope": [
-				"keyword.operator"
+				"keyword.operator",
+				"punctuation.separator",
 			],
 			"settings": {
 				"foreground": "#85B56D",
@@ -233,16 +295,33 @@
 				"entity.other.attribute-name",
 				"keyword.control.flow",
 				"keyword.control.java",
+				"keyword.control.while.cpp",
+				"keyword.control.for.cpp",
 				"keyword.control.c",
-				"keyword.control.return"
+				"keyword.control.return",
+				"keyword.control.try.cpp",
+				"keyword.control.try.java",
+				"keyword.control.catch.java",
+				"keyword.control.loop.js",
+				"keyword.control.trycatch.js"
 			],
 			"settings": {
 				"foreground": "#C285C0",
+				"fontStyle": "bold",
 			}
 		},
 		{
 			"name": "morado oscuro",
-			"scope": [],
+			"scope": [
+				"entity.name.function.constructor.cpp",
+				"meta.head.function.definition.cpp",
+				"variable.other.object.access.c",
+				"entity.name.function.java",
+				"keyword.other.import.java",
+				"support.type.python",
+
+
+			],
 			"settings": {
 				"foreground": "#c9118f",
 			}
@@ -255,9 +334,12 @@
 				"storage.type.class",
 				"keyword.control.import",
 				"keyword.control.directive",
+				"entity.name.function.member.cpp",
+				"entity.name.function.call.cpp",
+
 			],
 			"settings": {
-				"foreground": "#8f2c59",
+				"foreground": "#2f978d",
 			}
 		},
 		{
@@ -265,26 +347,34 @@
 			"scope": [
 				"string.quoted.other",
 				"entity.name.tag",
+				"support.function.magic.python",
 			],
 			"settings": {
-				"foreground": "#7700ff",
+				"foreground": "#9e990c",
+			}
+		},
+		{
+			"name": "Amarillo",
+			"scope": [
+				"entity.name.scope-resolution.parameter.cpp",
+				"entity.name.scope-resolution.cpp",
+			],
+			"settings": {
+				"foreground": "#bdcc4b",
 			}
 		}
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
-		"property": "#ff9562",
-		"variable": "#FF9562",
-		"class.declaration": "#18a1c0",
 		"namespace": "#bdcc4b",
-		"type": "#18a1c0",
-		"function": "#c9118f",
-		"magicFunction": "#e43176",
-		"class": "#02a786",
-		"selfParameter": "#ff5370",
-		"method": "#c9118f",
-		"modifier": "#18c09e",
 		"builtinConstant": "#13990e",
 		"module": "#7700ff",
-	}
+		"parameter": {
+			"fontStyle": "italic"
+		},
+	},
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"window.autoDetectColorScheme": true,
+
 }
